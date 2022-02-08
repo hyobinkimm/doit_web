@@ -1,0 +1,15 @@
+<label for="prod1">상품 선택</label>
+<select id="prod1"> <!--드롭다운 목록 - 기본적으로 하나의 옵션만 표시-->
+  <option value="special_3" selected>선물용 3kg</option> <!--기본으로 얘가 선택됨-->
+  <option value="special_5">선물용 5kg</option>
+  <option value="family_3">가정용 3kg</option>
+  <option value="family_5">가정용 5kg</option>
+</select>
+
+<label for="prod2">포장 여부</label>
+<input type="text" id="prod2" list="pack">
+<!--input에 있는 list 값 = datalist에 있는 id 값 = 데이터 목록 id-->
+<datalist id="pack"> <!--데이터 목록 만들어줌-->
+  <option value="package">선물 포장</option>
+  <option value="no_package">포장 안 함</option>
+</datalist>
