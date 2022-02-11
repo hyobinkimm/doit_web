@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>상품 소개 페이지</title>
+    <style>
+      p{
+        color:black; /*우선순위 3등*/
+      }
+      h1{
+        color: brown !important; /*우선순위 1등*/
+      }
+      p{
+        color: blue; /*우선순위 2등*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1 style="color: green">레드향</h1> 
+      <!--!important가 우선순위 1빠따이므로 brown색-->
+
+      <p style="color:red">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+      <!--우선 순위 2등(인라인 스타일)-->
+
+      <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+      <!--타입 스타일(우선순위가 더 높은 blue로 바뀜)-->
+      <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    </div>
+  </body>
+</html>
