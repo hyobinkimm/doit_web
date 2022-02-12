@@ -1,0 +1,20 @@
+<style>
+  @font-face{ /*사용자가 직접 업로드해서 글꼴을 정의할 때*/
+    font-family:'Ostrich';
+    src:local('Ostrich Sans'), /*local : 사용자 시스템에 해당 글꼴이 있는지 먼저 확인*/
+    url('fonts/ostrich-sans-bold.woff') format('woff'),
+    url('fonts/ostrich-sans-bold.ttf') format('ttf'),
+    url('fonts/ostrich-sans-bold.svg') format('svg');
+  }
+
+  .wfont{
+    font-family:'Ostrich', sans-serif;
+  }
+
+  p{
+    font-size:30px;
+  }
+</style>
+
+<p>Using Default Fonts</p>
+<p class='wfont'>Using Web Fonts</p>
