@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>인라인 레벨 요소</title>
+    <style>
+       h1, p, div{
+        border:1px solid blue;
+      }
+      .accent{
+        border:1px solid blue;
+        color:brown;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>시간이란..</h1>
+    <div>내일 죽을 것처럼 <span class="accent">오늘</span>을 살고</div> <!--span은 인라인 레벨 요소이므로 텍스트만큼만 공간 차지-->
+    <p>영원히 살 것처럼 <br>내일을 꿈꾸어라.</p>
+  </body>
+</html>

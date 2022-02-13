@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta chareset="UTF-8">
+    <title>블록 레벨 요소 사용하기</title> 
+    <style>
+      h1, p, div{ /*테두리를 그려서 레벨 요소 구별 : 너비 100%, 왼쪽이나 오른쪽에 다른 요소 x, 혼자 한 줄 차지*/
+        border:1px solid blue;
+      }
+      .accent{
+        border:1px solid blue;
+        color:brown;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>시간이란..</h1>
+    <div>내일 죽을 것처럼 <p class="accent">오늘</p>을 살고</div>
+    <p>영원히 살 것처럼 내일을 꿈꾸어라.</p>
+  </body>
+</html>
+
