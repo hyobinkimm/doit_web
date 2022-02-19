@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>가상 클래스 선택자 (:link, :visited, :hover, :active) link 스타일</title>
+<style>
+  .container {
+    width: 960px;
+    margin : 0 auto;
+  }
+  .navi{
+    width:960px;
+    height:60px;
+    padding-bottom:10px;
+    border-bottom:2px solid #ccc;
+  }
+  .navi ul{
+    list-style: none;
+    padding-top:10px; 
+    padding-bottom:5px;
+  }
+  
+  .navi ul li{
+    float:left;
+    width:150px;
+    padding:10px;
+  }
+
+  /* :link - 링크의 밑줄을 없애거나 색상을 바꿀 때
+  :visited - 한 번 이상 방문한 링크에 적용
+  :hover - 마우스 포인터를 올려놓을 때
+  :active - 클릭했을 때
+  :focus - 텍스트 필드 안에 마우스 포인터를 올려놓거나 웹 문서에서 tab을 눌러 입력 커서를 이동했을 때 */
+
+  .navi a:link, .navi a:visited{ /* 방문한 링크와 방문하지 않은 링크 설정 */
+    display:block;
+    font-size:14px;
+    color:#000;
+    padding:10px;
+    text-decoration: none; /* 밑줄 없앰 */
+    text-align:center;
+  }
+
+  .navi a:hover, .navi a:focus{ /* 마우스 포인터를 올렸을 때의 초점을 맞췄을 때 설정 */
+    background-color: #222;
+    color:#fff;
+  }
+
+  .navi a:active{ /* 마우스 포인터로 클릭했을 때 */
+    background-color: #f00; 
+  }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <nav class="navi">
+      <ul>
+        <li><a href="#">이용 안내</a></li>
+        <li><a href="#">객실 소개</a></li>
+        <li><a href="#">예약 방법 및 요금</a></li>
+        <li><a href="#">예약하기</a></li>
+      </ul>
+    </nav>  
+  </div>
+</body>
+</html>
