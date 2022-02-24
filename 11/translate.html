@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>Transform:translate(축만큼 이동)</title>
+    <style>
+			#container {
+				width:800px;
+				height:200px;
+				margin:20px auto;
+			}
+			.origin {
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				float: left;
+				margin: 40px;
+			}
+			.origin > div {				
+				width:100px;
+				height:100px;
+				background-color:orange;
+			}
+      
+      /* hover : 마우스 포인터로 올려놓았을 때 */
+      /* # 붙이면 id 선택자 문서 안에서 한 번만 적용 */
+      #movex:hover{transform: translateX(50px);} /* x축으로 50px 이동 */
+
+      #movey:hover{transform: translatey(20px);} /* y축으로 20px 이동 */
+
+      #movexy:hover{transform: translate(10px, 20px);} /* x축으로 10px, y축으로 20px 이동 */ 
+		</style>
+	</head>
+	<body>		
+		<div id="container">
+			<div class="origin">
+				<div  id="movex"></div>		
+			</div>
+			<div class="origin">
+				<div id="movey"></div>	
+			</div>
+			<div class="origin">
+				<div id="movexy"></div>		
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
