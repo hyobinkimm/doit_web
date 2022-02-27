@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수와 호이스팅</title>
+</head>
+<body>
+  <script>
+    var x=10;
+
+    function displayNumber(){
+      // var y; // 자바 스크립트 해석기가 인식하는 코드
+      console.log("x is "+x);
+      console.log("y is "+y);
+      var y=20; // y=20; // 자바 스크립트 해석기가 인식하는 코드
+    }
+
+    displayNumber();
+  </script>
+</body>
+</html>
